@@ -41,39 +41,41 @@ function playRound() {
     }
 }
 
-//play 5 rounds and keep score and declare winner
+//play full game
 function game() {
-playRound();
-console.log(playerScore);
-console.log(computerScore);
+    //play 5 rounds and keep track of score
+    playRound();
+    console.log(playerScore);
+    console.log(computerScore);
 
-playRound();
-console.log(playerScore);
-console.log(computerScore);
+    playRound();
+    console.log(playerScore);
+    console.log(computerScore);
 
-playRound();
-console.log(playerScore);
-console.log(computerScore);
+    playRound();
+    console.log(playerScore);
+    console.log(computerScore);
 
-playRound();
-console.log(playerScore);
-console.log(computerScore);
+    playRound();
+    console.log(playerScore);
+    console.log(computerScore);
 
-playRound();
-console.log(playerScore);
-console.log(computerScore);
+    playRound();
+    console.log(playerScore);
+    console.log(computerScore);
 
-if (playerScore > computerScore) {
-    alert(playerScore + ' to ' + computerScore + ', ' + 'You won the game!')
-}
+    //declare winner by comparing scores
+    if (playerScore > computerScore) {
+        alert(playerScore + ' to ' + computerScore + ', ' + 'You won the game!')
+    }
 
-if (computerScore > playerScore) {
-    alert(playerScore + ' to ' + computerScore + ', ' + 'You lost the game!')
-}
+    if (computerScore > playerScore) {
+        alert(playerScore + ' to ' + computerScore + ', ' + 'You lost the game!')
+    }
 
-if (playerScore === computerScore) (
-    alert(playerScore + ' to ' + computerScore + ', ' + 'The game is a tie!')
-)
+    if (playerScore === computerScore) (
+        alert(playerScore + ' to ' + computerScore + ', ' + 'The game is a tie!')
+    )
 }
 
 game();
